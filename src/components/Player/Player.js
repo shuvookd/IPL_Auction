@@ -2,6 +2,9 @@ import React from 'react';
 import './Player.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPerson } from '@fortawesome/free-solid-svg-icons';
+
+
+
 const Player = ({player, handleAddToCart}) => {
 const { name, image, price } = player;
    
@@ -12,8 +15,8 @@ return (
             <p>{name}</p>
             <p>Price: {price}</p>
         </div>
-        <button onClick={() => handleAddToCart(player)} className='btn-cart'>
-            <p className='btn-text'>Buy Player </p>
+        <button  className='btn-cart' onClick={() => handleAddToCart(name)}>
+              Buy Player 
             <FontAwesomeIcon icon={ faPerson}></FontAwesomeIcon>
         </button>
     </div>
