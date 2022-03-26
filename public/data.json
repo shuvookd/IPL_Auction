@@ -3,72 +3,73 @@
         "name" : "MS Dhoni",
         "id" : 1,
         "price" : "50 TK",
-        "image" : "images/kohli.jpg "
+        "image" : "../src/images/Dhoni.jpg "
     },
     {
         "name" : "Virat Kohli",
         "id" : 2,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/kohli.png "
     },
     {
+        
         "name" : "Sakib Al Hasan",
         "id" : 3,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Sakib.jpg "
     },
     {
         "name" : "Mustafizur Rahman",
         "id" : 4,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Mustafiz.jpg "
     },
     {
         "name" : "Mr. Gayle",
         "id" : 5,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Chris-Gayle.jpg "
     },
     {
         "name" : "Rohit Sharma",
         "id" : 6,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Rohit_Sharma.jpg "
     },
     {
         "name" : "Hardik Pandia",
         "id" : 7,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Hardik.jpg "
     },
     {
         "name" : "Rishab Pant",
         "id" : 8,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Pant.jpg "
     },
     {
         "name" : "David Warner",
         "id" : 9,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Warner.jpg "
     },
     {
         "name" : "Rashid Khan",
         "id" : 10,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Rashid.jpg"
     },
     {
         "name" : "KL Rahul",
         "id" : 11,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/KL_Rahul.jpg"
     },
     {
         "name" : "Glann Maxwell",
         "id" : 12,
         "price" : "50 TK",
-        "image" : " "
+        "image" : "../src/images/Maxwell.jpg "
     }
 ]

@@ -1,20 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import './Players.css'
-import Player from "../Player/Player";
+import React from 'react';
+// import React, { useEffect, useState } from 'react';
 
+const Profile = () => {
+    // const [players, setplayers] = useState([]);
 
-const Players = () => {
-    
-        
-    const [players, setplayers] = useState([]);
-
-    useEffect( () => {
-        fetch('data.json')
-        .then(res => res.json())
-        .then(data => setplayers(data))
-    },[])
-
-
+    // useEffect( () => {
+    //     fetch('data.json')
+    //     .then(res => res.json())
+    //     .then(data => setplayers(data))
+    // },[])
     return (
         <div className='players-container'>
         <div className="players">
@@ -35,4 +29,4 @@ const Players = () => {
     );
 };
 
-export default Players;
+export default Profile;
