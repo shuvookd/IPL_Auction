@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Player from '../Player/Player';
 import './Profile.css';
 
@@ -30,8 +31,7 @@ const Profile = () => {
                 }
             </div>
             <div className="cart-container">
-                <h4>Selected Player</h4>
-                <p>{cart.length}</p>
+                <Cart cart={cart} ></Cart>
             </div>
         </div>
     );

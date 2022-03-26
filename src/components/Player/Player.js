@@ -1,7 +1,7 @@
 import React from 'react';
 import './Player.css'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPerson } from '@fortawesome/free-solid-svg-icons';
 const Player = ({player, handleAddToCart}) => {
 const { name, image, price } = player;
    
@@ -13,8 +13,8 @@ return (
             <p>Price: {price}</p>
         </div>
         <button onClick={() => handleAddToCart(player)} className='btn-cart'>
-            <p className='btn-text'>Add to Cart</p>
-            {/* <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> */}
+            <p className='btn-text'>Buy Player </p>
+            <FontAwesomeIcon icon={ faPerson}></FontAwesomeIcon>
         </button>
     </div>
 );
