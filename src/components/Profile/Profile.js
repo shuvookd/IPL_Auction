@@ -1,30 +1,38 @@
-import React from 'react';
-// import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import Player from '../Player/Player';
+import './Profile.css';
+
 
 const Profile = () => {
-    // const [players, setplayers] = useState([]);
+    const [players, setPlayers] = useState([]);
+    const [cart, setCart] = useState([]);
 
-    // useEffect( () => {
-    //     fetch('data.json')
-    //     .then(res => res.json())
-    //     .then(data => setplayers(data))
-    // },[])
+    useEffect( () =>{
+        fetch('data.json')
+        .then(res=> res.json())
+        .then(data => setPlayers(data))
+    }, []);
+
+    const handleAddToCart = (player) =>{
+        console.log(player);
+        const newCart = [...cart, player];
+        setCart(newCart);
+    }
     return (
-        <div className='players-container'>
-        <div className="players">
-            <h1>This is players section</h1>
-            {
-                players.map(player => <Player 
-                    key={player.id}
-                    player ={player}
-                    
-                    ></Player>)
-            }
-        </div>
-        <div className="display">
-            <h1>This is cart</h1>
-        </div>
-        
+        <div className='profile-container'>
+            <div className="players-container">
+                {
+                    players.map(player=><Player 
+                        key={player.id}
+                        player={player}
+                        handleAddToCart={handleAddToCart}
+                        ></Player>)
+                }
+            </div>
+            <div className="cart-container">
+                <h4>Selected Player</h4>
+                <p>{cart.length}</p>
+            </div>
         </div>
     );
 };

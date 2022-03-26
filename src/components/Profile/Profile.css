@@ -1,11 +1,15 @@
-.players-container{
+.profile-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-
-}
-.players-container{
+} 
+ .players-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 45px;
     
-}
+} 
+ @media screen and (max-width:576px) {
+    .players-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 

@@ -1,19 +1,22 @@
 import React from 'react';
-import './Player.css';
-
-const Player = (props) => {
-    const {name,price,id,image} = props.player;
-    return (
-        <div>
-            <div>
-                <p>{image}</p>
-            </div>
-            <h2>Name :{name}</h2>
-            <p>Price :{price}</p>
-            <p>ID :{id}</p>
-            
+import './Player.css'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
+const Player = ({player, handleAddToCart}) => {
+const { name, image, price } = player;
+   
+return (
+    <div className='player'>
+        <img src={image} alt=""></img>
+        <div className='player-info'>
+            <p>{name}</p>
+            <p>Price: {price}</p>
         </div>
-    );
+        <button onClick={() => handleAddToCart(player)} className='btn-cart'>
+            <p className='btn-text'>Add to Cart</p>
+            {/* <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon> */}
+        </button>
+    </div>
+);
 };
-
 export default Player;
